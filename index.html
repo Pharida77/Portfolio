@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Pharidas Portfolie Webside</title>
+        <link rel="stylesheet" href="start.css">
+    </head>
+
+    <body>
+      
+        <header><img src="images/profilbilldeSTUD.jpg" alt="Profilbillede" class="profile-image"> </header>
+        
+          
+          <div class="box-container">
+            <div class="box" onclick="toggleContent('om')">Om</div>          
+            <div class="box" onclick="toggleContent('uddannelse')">Uddannelse</div>          
+            <div class="box" onclick="toggleContent('curriculum vitae')">Curriculum vitae</div>          
+            <div class="box" onclick="toggleContent('sprog')">Sprog</div>         
+            <div class="box" onclick="toggleContent('galleri')">Galleri</div>
+            <div class="box" onclick="toggleContent('kontakt')">Kontakt</div>
+           
+          </div>
+
+          <div id="om" class="content">
+            <h2>Om</h2>
+            <p>Mit navn er Phoenix Farida Nagai, Jeg er opvoksen i Sverige, og jeg har boet i Danmark siden 2005.</p>
+            <p>I min fridid dyrker jeg dans, musik, vandreturer i fjællene og læser non-fiktionslitteratur.</p>
+             <p>Jeg er positiv og ser muligheder i stedet for begrænsninger.<br>Desuden er jeg motiveret mødestabil, ansvarsfuld og flekxible i forhold til det jeg laver.</p>
+             <p> Jeg har et stort Servicegen og har siden jeg var 18 år arbejdet i servicebranchen:<br>Kundeservice, Art & performance, Hotel & restaurant samt Sundhedsvæsnet.</p>
+            <p> I de seneste 8 år har jeg arbejdet som sygeplejerske, men har et brændende ønske om at vider udvikle mig
+             indenfor elektornik, digitalisering og it-teknologier.</p> 
+             <p>Jeg har afsluttet Grundforløb del 2 som datateknikker med speciale i programmering hos TEC Ballerup og er nu i skoleoplæring.</p>
+            
+          </div>
+
+          <div id="uddannelse" class="content">
+            <h2>Uddannelse</h2>
+            <ul>
+              <li>Datateknikker/Programmering  - TEC Ballerup, 2024-2029.</li>
+              <li>STX-Naturvidenskabelig Linje - VUC Frederiksberg, 2020-2023.</li>
+              <li>Sygeplejerske - UCC-Nordsjaelland, 2014-2018.</li>
+              <li>Social og Sundhedsassistent- SOPU, 2009-2012.</li>
+            </ul>
+          </div>
+
+          <div id="curriculum vitae" class="content">
+            <h2>CV</h2>
+            <p>2022-2025: Psykiatrisk Sygeplejerske på Akutmodtagelsen hos Region Hovedstaden.</p>
+            <p>2019-fortsat: Medicinsk og Kirurgisk sygeplejerske hos region hovedstaden.</p>
+            <p>2016-fortsat: Sosuassistent og Psykiatrisk Sygeplejerske hos Region Hovedstaden.</p>
+            <p>2015-2020: Sosuassistent og Lungesygeplejerske hos Region Hovedstaden.</p>
+          </div>
+
+          <div id="sprog" class="content">
+            <h2>Sprog</h2>
+            <ul>
+              <li>Engelsk mundtigt og skriftligt.</li>
+              <li>Svensk: mundligt og skriftligt.</li>
+              <li>Dansk: mundtligt og skriftligt.</li>
+            </ul>
+          </div>
+
+          <div id="galleri" class="content">
+            <h2>Galleri</h2>
+            <p>Her er billeder af projekter, mig selv eller andet relevant.</p>
+            <img src="Student2023.jpg" alt="Min student 2023" width="200" />
+          </div>
+
+          <div id="kontakt" class="content">
+            <h2>Kontakt</h2>
+            <p>Jeg kan kontaktes via:</p>
+            <p>E-mail: positivefarida@hotmail.com </p>
+            <p>Tel: 0045-41825882.</p>
+          </div>
+
+          <footer class="tech-footer">
+            <p>Teknologier jeg arbejder med:</p>
+            <div class="tech-logos">
+                <div class="tech-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo">
+                  <span>HTML</span>
+                </div>
+                <div class="tech-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo">
+                  <span>CSS</span>
+                </div>
+                <div class="tech-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+                  <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo">
+                  <span>Python</span>
+                </div>
+                <div class="tech-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo">
+                  <span>Java</span>
+                </div>
+                <div class="tech-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code logo">
+                  <span>VS Code</span>
+                </div>
+                <div class="tech-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo">
+                  <span>Git</span>
+                </div>
+                <div class="tech-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL logo">
+                  <span>SQL</span>
+                </div>
+                <div class="tech-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Microsoft logo">
+                  <span>Microsoft</span>
+                </div>
+              </div>              
+           
+          </footer>
+          
+          <script>
+            function showContent(id) {
+              const allContent = document.querySelectorAll('.content');
+              allContent.forEach(c => c.classList.remove('active'));
+              document.getElementById(id).classList.add('active');
+            }
+          </script> 
+          <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    }
+  </script>
+    </body>
+</html>
